@@ -29,6 +29,7 @@ header {
 .header-title {
     position: relative;
     animation: header 5s ease-in-out infinite alternate;
+    letter-spacing: 4px;
 }
 
 /* title animation */
