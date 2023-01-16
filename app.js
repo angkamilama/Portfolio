@@ -43,8 +43,8 @@ function nextProject() {
         <p class="project-description">${projects[index].description}</p>
         <a href="#" class="project-link">${projects[index].link}</a>`;
         }
-    } else if {
-    //how to move to projects[0] after reaching projects[projects.length - 1]???
+    // } else if {
+    // //how to move to projects[0] after reaching projects[projects.length - 1]???
 
     }
 
