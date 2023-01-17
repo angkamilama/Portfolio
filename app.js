@@ -42,11 +42,14 @@ function nextProject() {
         projectInfo.innerHTML = `<h2 class="project-title">${projects[index].name}</h2>
         <p class="project-description">${projects[index].description}</p>
         <a href="#" class="project-link">${projects[index].link}</a>`;
+        } else {
+        index = 0;
+        projectInfo.innerHTML = `<h2 class="project-title">${projects[index].name}</h2>
+        <p class="project-description">${projects[index].description}</p>
+        <a href="#" class="project-link">${projects[index].link}</a>`;
         }
-    // } else if {
-    // //how to move to projects[0] after reaching projects[projects.length - 1]???
-
-    }
+    //how to move to projects[0] after reaching projects[projects.length - 1]???
+}
 
 
 
