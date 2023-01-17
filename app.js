@@ -2,7 +2,17 @@ let projects = [
     {
         name: 'GITHUB Fetch API',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis libero doloremque, voluptatum, excepturi et eos incidunt repudiandae saepe quo dolorem harum commodi ut non laborum alias architecto. Eius, iure provident inventore et eum dolores corrupti consequuntur, repellat omnis laboriosam ad?',
-        link: 'sdfsdafas'
+        link: 'https://codepen.io/angkamilama/pen/bGKbWWz'
+    },
+    {
+        name: 'Clock',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis libero et eum dolores corrupti consequuntur, repellat omnis laboriosam ad?',
+        link: 'https://codepen.io/angkamilama/pen/BaPWKBM'
+    },
+    {
+        name: 'Wikipedia Search',
+        description: 'voluptatum, excepturi et eos incidunt repudiandae saepe quo dolorem harum commodi ut non laborum alias architecto. Eius, iure provident inventore et eum dolores corrupti consequuntur, repellat omnis laboriosam ad?',
+        link: 'https://codepen.io/angkamilama/pen/eYKVodL'
     },
     {
         name: 'Calculator',
@@ -10,19 +20,9 @@ let projects = [
         link: 'calculator link'
     },
     {
-        name: 'Clock',
-        description: 'watch the time',
-        link: 'clock link'
-    },
-    {
         name: 'To do app',
         description: 'list of things to do',
         link: 'to do app link'
-    },
-    {
-        name: 'Random project',
-        description: ' just random things !!!',
-        link: 'random project link'
     },
 
 ]
@@ -41,14 +41,13 @@ function nextProject() {
         index++;  
         projectInfo.innerHTML = `<h2 class="project-title">${projects[index].name}</h2>
         <p class="project-description">${projects[index].description}</p>
-        <a href="#" class="project-link">${projects[index].link}</a>`;
+        <a href=${projects[index].link} class="project-link" target="_blank">Checkout this project !!!</a>`;
         } else {
         index = 0;
         projectInfo.innerHTML = `<h2 class="project-title">${projects[index].name}</h2>
         <p class="project-description">${projects[index].description}</p>
-        <a href="#" class="project-link">${projects[index].link}</a>`;
+        <a href=${projects[index].link} class="project-link" target="_blank">Checkout this project !!!</a>`;
         }
-    //how to move to projects[0] after reaching projects[projects.length - 1]???
 }
 
 
@@ -59,12 +58,12 @@ function previousProject() {
         index--;
         projectInfo.innerHTML = `<h2 class="project-title">${projects[index].name}</h2>
         <p class="project-description">${projects[index].description}</p>
-        <a href="#" class="project-link">${projects[index].link}</a>`;
+        <a href=${projects[index].link} class="project-link" target="_blank">Checkout this project !!!</a>`;
     } else {
         index = projects.length - 1;
         projectInfo.innerHTML = `<h2 class="project-title">${projects[index].name}</h2>
         <p class="project-description">${projects[index].description}</p>
-        <a href="#" class="project-link">${projects[index].link}</a>`;
+        <a href=${projects[index].link} class="project-link" target="_blank">Checkout this project !!!</a>`;
 
     }
 }
