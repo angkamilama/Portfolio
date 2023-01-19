@@ -61,7 +61,7 @@ ul {
 ul li:hover {
     transform: scale(1.2);
     transition: transform 0.23s ease-in-out;
-    background-color: antiquewhite;
+    background-color: rgb(243, 238, 231);
 }
 
  li a {
@@ -136,6 +136,14 @@ ul li:hover {
     justify-content: space-around;
     /* margin-top: 15px auto; */
     width: 80%;
+    position: relative;
+}
+
+.open-projects {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    font-family: 'Satisfy', cursive;
 }
 
 .btn-prev,
@@ -152,7 +160,7 @@ ul li:hover {
 
 .btn-prev:active,
 .btn-next:active {
-    background-color: rgb(114, 117, 117);
+     background-color: rgb(114, 117, 117);
      translate: 0.7px 1.5px;
      transform: scale(0.96);
      transition: all 0.2s ease-in-out;
@@ -164,26 +172,40 @@ ul li:hover {
 .project-info {
     margin: 30px auto;
     padding: 30px;
-    height: 325px;
-    width: 70%;
+    height: 350px;
+    width: 60%;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     box-shadow: 3px 4px 15px 3px rgb(150, 148, 148);
+    background-color: rgb(243, 238, 231);
 }
 
 .project-description {
     font-size: 18px;
     line-height: 1.4; 
 }
+.project-number{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.project-number>.fa-solid{
+    color:rgb(155, 140, 46);
+}
+
+.project-index {
+    color:coral;
+}
 
 .project-link {
     text-decoration: none;
     font-size: 18px;
     color: black;
-    padding: 8px 14px;
+    padding: 5px 8px;
     border-radius: 8px;
     border: 1px solid black;
     box-shadow: 5px 4px 5px grey;
@@ -192,9 +214,9 @@ ul li:hover {
 .project-link:hover {
     text-decoration: none;
     font-size: 18px;
-    background-color: rgb(114, 117, 117);
+    background-color: rgb(102, 108, 108);
     color:aliceblue;
-    padding: 8px 14px;
+    padding: 5px 8px;
     border-radius: 8px;
     border: 1px solid black;
    
