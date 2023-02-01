@@ -30,6 +30,12 @@ let projects = [
         link: 'to do app link',
         number: 4
     },
+    {
+        name: 'Movie Ticket app',
+        description: 'select movie and calculate movie ticket',
+        link: 'https://codepen.io/angkamilama/pen/RwBBKYX',
+        number: 5
+    }
 
 ]
 
@@ -38,32 +44,26 @@ const nextBtn = document.querySelector('.btn-next');
 const projectInfo = document.querySelector('.project-info');
 const openProject = document.querySelector('.open-projects');
 
-prevBtn.addEventListener('click', previousProject);
-nextBtn.addEventListener('click', nextProject);
+let index = 0;
+
+const showAnotherProject = (nextIndex) => {
+  if (nextIndex < 0) {
+    index = projects.length - 1 ;
+
+} else if (nextIndex >= projects.length){
+    index = 0;
+} else {
+    index = nextIndex;
+}
+  
+  displayProject()
+}
+
+prevBtn.addEventListener('click', () => showAnotherProject(index - 1));
+nextBtn.addEventListener('click', () => showAnotherProject(index + 1));
 openProject.addEventListener('click', () => {
     displayProject();
 } )
-
-let index = 0;
-
-
-function nextProject() {
-    if (index < projects.length - 1) {
-        index++;   
-    } else {
-        index = 0;  
-    }
-   displayProject();
-}
-
-function previousProject() {
-    if (index >= 1) {
-        index--;
-    } else {
-        index = projects.length - 1;
-    }
-    displayProject();
-}
 
 function displayProject() {
     projectInfo.innerHTML = `<h2 class="project-title">${projects[index].name}</h2>

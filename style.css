@@ -160,7 +160,7 @@ ul li:hover {
 
 .btn-prev:active,
 .btn-next:active {
-     background-color: rgb(114, 117, 117);
+    background-color: rgb(114, 117, 117);
      translate: 0.7px 1.5px;
      transform: scale(0.96);
      transition: all 0.2s ease-in-out;
@@ -214,7 +214,7 @@ ul li:hover {
 .project-link:hover {
     text-decoration: none;
     font-size: 18px;
-    background-color: rgb(102, 108, 108);
+    background-color: rgb(114, 117, 117);
     color:aliceblue;
     padding: 5px 8px;
     border-radius: 8px;
